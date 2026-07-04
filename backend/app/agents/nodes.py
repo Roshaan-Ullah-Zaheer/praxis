@@ -276,6 +276,18 @@ def detect_conflicts(state: AgentState) -> dict:
     ]
     conflicts = [{"document_a": c.document_a, "document_b": c.document_b, "nature": c.nature}
                  for c in analysis.conflicts]
+
+    # Empty positions despite having candidate passages means the analysis call
+    # didn't really run (commonly a rate limit) — be honest instead of falsely
+    # reporting "no contradictions", and don't cache this as an answer.
+    if doc_blocks and not positions:
+        return {
+            "answer": "I found the relevant documents but couldn't complete the contradiction "
+                      "analysis just now — the model may be rate-limited. Please try again shortly.",
+            "citations": [], "conflicts": empty, "retrieved": _serialize_hits(all_hits),
+            "grounding": {"grounded": False, "confidence": 0.0, "unsupported": []}, "audit": audit,
+        }
+
     citations = [
         {"n": i, "filename": p["filename"], "document_id": p["document_id"], "page": p["page"], "chunk_id": ""}
         for i, p in enumerate(positions, 1)

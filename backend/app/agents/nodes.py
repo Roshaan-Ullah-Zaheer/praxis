@@ -230,7 +230,7 @@ def detect_conflicts(state: AgentState) -> dict:
     for h in seed:
         if h.document_id not in candidate_ids:
             candidate_ids.append(h.document_id)
-    candidate_ids = candidate_ids[:6]
+    candidate_ids = candidate_ids[:5]
     if not candidate_ids:
         return {
             "answer": "I couldn't find documents you can access that address that topic to compare.",
@@ -249,13 +249,13 @@ def detect_conflicts(state: AgentState) -> dict:
         fname = hits[0].filename
         fname_to_id[fname] = did
         all_hits.extend(hits)
-        passages = "\n".join(f"  (p{h.page}) {h.content}" for h in hits)
+        passages = "\n".join(f"  (p{h.page}) {h.content[:700]}" for h in hits)
         doc_blocks.append(f"=== {fname} ===\n{passages}")
         audit.append({"actor": "conflict_detector", "action": "retrieve",
                       "target": f"{fname} ({len(hits)} passages)", "role_context": state.get("active_role")})
 
     # 3) one structured call extracts each document's stance AND the conflicts
-    model = llm.get_structured(ConflictAnalysis, temperature=0.0, max_tokens=2048)
+    model = llm.get_structured(ConflictAnalysis, temperature=0.0, max_tokens=4096)
     try:
         analysis = model.invoke(
             [("system", CONFLICT_SYSTEM),

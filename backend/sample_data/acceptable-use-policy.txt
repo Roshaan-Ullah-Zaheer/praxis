@@ -1,0 +1,34 @@
+NORTHWIND TRADING CO. — ACCEPTABLE USE POLICY
+Applies to all users of company systems and the customer portal
+Effective: 1 March 2025
+
+1. PURPOSE
+This policy sets out acceptable use of Northwind's information systems, network, and
+customer-facing portal.
+
+2. ACCEPTABLE USE
+Systems are provided for legitimate business purposes. Incidental personal use is
+permitted provided it does not interfere with work or violate this policy.
+
+3. PROHIBITED ACTIVITIES
+3.1 Sharing account credentials or allowing unauthorized access.
+3.2 Attempting to bypass security controls or access data without authorization.
+3.3 Uploading malware or unlawful content.
+3.4 Using company systems to harass others or infringe intellectual property.
+
+4. SECURITY RESPONSIBILITIES
+4.1 Users must choose strong passwords and enable multi-factor authentication where
+    available.
+4.2 Suspected security incidents must be reported to security@northwind.example
+    immediately.
+
+5. MONITORING
+The company may monitor system use for security and compliance, consistent with
+applicable law and the Privacy Policy.
+
+6. DATA HANDLING
+Users must handle customer and company data in accordance with the Privacy Policy and
+Records Retention Policy.
+
+7. ENFORCEMENT
+Violations may result in suspension of access and disciplinary action.

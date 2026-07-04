@@ -1,0 +1,36 @@
+MUTUAL NON-DISCLOSURE AGREEMENT
+Between Northwind Trading Co. and Stark Logistics Partners
+Effective Date: 5 February 2025
+
+1. PURPOSE
+The parties wish to explore a potential business relationship and may disclose
+confidential information to one another for that purpose (the "Purpose").
+
+2. DEFINITION OF CONFIDENTIAL INFORMATION
+"Confidential Information" means non-public information disclosed by one party to the
+other, whether oral, written, or electronic, that is marked or reasonably understood to
+be confidential.
+
+3. OBLIGATIONS
+3.1 Each party shall use the other's Confidential Information solely for the Purpose.
+3.2 Each party shall not disclose Confidential Information to third parties without
+    prior written consent.
+
+4. TERM OF CONFIDENTIALITY
+4.1 The obligations of confidentiality under this Agreement shall remain in effect for
+    three (3) years from the date of disclosure.
+4.2 Obligations with respect to trade secrets continue for as long as the information
+    remains a trade secret.
+
+5. EXCLUSIONS
+Confidential Information does not include information that is or becomes public through
+no fault of the receiving party, was already known, or is independently developed.
+
+6. RETURN OF MATERIALS
+Upon request, each party shall return or destroy the other's Confidential Information.
+
+7. NO LICENSE
+Nothing in this Agreement grants any license to intellectual property.
+
+8. GOVERNING LAW
+This Agreement is governed by the laws of the State of Delaware.

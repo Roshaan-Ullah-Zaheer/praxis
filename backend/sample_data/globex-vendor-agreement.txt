@@ -1,0 +1,36 @@
+VENDOR SERVICES AGREEMENT
+Between Northwind Trading Co. ("Client") and Globex Components Inc. ("Supplier")
+Effective Date: 3 March 2025
+
+1. ENGAGEMENT
+Supplier will supply electronic components and logistics services per the attached
+schedules.
+
+2. INVOICING AND PAYMENT
+2.1 Supplier issues invoices upon shipment of each order.
+2.2 Payment is due within forty-five (45) days of the invoice date (Net 45).
+2.3 Amounts not paid when due bear interest at 1.5% per month.
+
+3. DURATION; TERMINATION
+3.1 The initial term is eighteen (18) months and renews automatically for successive
+    one-year periods unless terminated.
+3.2 Either party may terminate for convenience by providing sixty (60) days' written
+    notice prior to the intended termination date.
+3.3 Either party may terminate for cause upon thirty (30) days' uncured material breach.
+
+4. PRODUCT WARRANTY
+4.1 Supplier warrants delivered products against defects for ninety (90) days from
+    delivery.
+4.2 Defective items will be replaced at Supplier's expense.
+
+5. LIABILITY CAP
+5.1 Supplier's maximum aggregate liability for any and all claims shall not exceed
+    fifty thousand U.S. dollars ($50,000).
+5.2 In no event shall either party be liable for lost profits or consequential loss.
+
+6. CONFIDENTIAL INFORMATION
+Confidential information shall be held in confidence for five (5) years from the date
+of disclosure.
+
+7. JURISDICTION
+This Agreement shall be governed by the laws of the State of New York.

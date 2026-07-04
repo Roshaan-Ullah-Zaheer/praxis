@@ -1,0 +1,34 @@
+NORTHWIND TRADING CO. — PRIVACY POLICY
+Last updated: 1 April 2025
+
+1. WHO WE ARE
+Northwind Trading Co. respects your privacy. This policy explains how we collect, use,
+and retain personal information about customers and website visitors.
+
+2. INFORMATION WE COLLECT
+We collect contact details, order history, payment metadata, and website usage data
+through cookies and analytics.
+
+3. HOW WE USE INFORMATION
+We use personal information to fulfill orders, provide support, comply with legal
+obligations, and improve our services.
+
+4. DATA RETENTION
+4.1 We retain customer personal data for up to one (1) year after your last
+    interaction with us, after which it is deleted or anonymized.
+4.2 Aggregated, anonymized statistics may be kept longer for analytics.
+
+5. SHARING
+We share personal data with service providers under contract and where required by
+law. We do not sell personal data.
+
+6. YOUR RIGHTS
+You may request access, correction, deletion, or a copy of your personal data by
+contacting privacy@northwind.example.
+
+7. SECURITY
+We protect personal data with industry-standard safeguards, including encryption and
+access controls.
+
+8. CONTACT
+Questions about this policy can be sent to privacy@northwind.example.

@@ -1,0 +1,15 @@
+{
+  "description": "Neutral-domain sample corpus with deliberate cross-document contradictions (payment terms, termination notice, data retention, warranty/liability). Roles power the governance demo.",
+  "documents": [
+    { "file": "acme-master-services-agreement.txt", "roles": ["legal", "finance"] },
+    { "file": "globex-vendor-agreement.txt", "roles": ["legal", "finance"] },
+    { "file": "initech-supply-contract.txt", "roles": ["legal", "finance"] },
+    { "file": "service-level-agreement.txt", "roles": ["legal", "finance"] },
+    { "file": "data-processing-addendum.txt", "roles": ["legal"] },
+    { "file": "mutual-nda.txt", "roles": ["legal"] },
+    { "file": "records-retention-policy.txt", "roles": ["finance", "legal"] },
+    { "file": "privacy-policy.txt", "roles": ["public"] },
+    { "file": "acceptable-use-policy.txt", "roles": ["public", "hr"] },
+    { "file": "employee-handbook.txt", "roles": ["hr"] }
+  ]
+}

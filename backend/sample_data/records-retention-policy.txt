@@ -1,0 +1,34 @@
+NORTHWIND TRADING CO. — RECORDS RETENTION POLICY
+Internal Policy — Finance & Legal
+Approved: 10 January 2025
+
+1. PURPOSE
+This policy defines how long company records are retained to meet legal, tax, and
+operational requirements.
+
+2. SCOPE
+This policy applies to all employees and to all business records, whether physical or
+electronic.
+
+3. RETENTION SCHEDULE
+3.1 Financial and accounting records (ledgers, invoices, tax filings) shall be retained
+    indefinitely for audit and historical reference.
+3.2 Contracts and legal records shall be retained for ten (10) years following
+    expiration or termination.
+3.3 Routine operational correspondence shall be retained for two (2) years.
+
+4. PERSONAL DATA
+Records containing personal data are also subject to the Privacy Policy and any
+applicable Data Processing Addendum; where retention periods conflict, the shorter
+period required by data protection law applies to personal data specifically.
+
+5. DESTRUCTION
+Records that have reached the end of their retention period shall be securely destroyed
+unless subject to a legal hold.
+
+6. LEGAL HOLDS
+Upon notice of litigation or investigation, affected records must be preserved
+regardless of the standard retention schedule.
+
+7. RESPONSIBILITY
+The Finance Director and General Counsel jointly own this policy and review it annually.

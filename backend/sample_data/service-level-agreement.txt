@@ -1,0 +1,32 @@
+SERVICE LEVEL AGREEMENT (SLA)
+Attachment to the Vendor Services Agreement with Globex Components Inc.
+Effective Date: 3 March 2025
+
+1. SERVICE AVAILABILITY
+1.1 Supplier's ordering portal shall be available 99.9% of the time, measured monthly,
+    excluding scheduled maintenance.
+1.2 Scheduled maintenance is limited to eight (8) hours per month, announced 48 hours
+    in advance.
+
+2. SUPPORT RESPONSE TIMES
+2.1 Critical (Severity 1) issues: response within four (4) hours, 24x7.
+2.2 High (Severity 2) issues: response within one (1) business day.
+2.3 Standard (Severity 3) issues: response within three (3) business days.
+
+3. SERVICE CREDITS
+3.1 If monthly availability falls below 99.9%, Client is entitled to a 5% service
+    credit on that month's fees.
+3.2 If availability falls below 99.0%, the credit increases to 15%.
+3.3 Service credits are Client's sole remedy for availability failures.
+
+4. MEASUREMENT AND REPORTING
+Supplier shall provide a monthly availability report within five (5) business days of
+month end.
+
+5. ESCALATION
+Unresolved Severity 1 issues are escalated to the Supplier's duty manager after two (2)
+hours.
+
+6. EXCLUSIONS
+Availability calculations exclude outages caused by Client systems, force majeure, or
+third-party networks outside Supplier's control.

@@ -1,0 +1,34 @@
+DATA PROCESSING ADDENDUM (DPA)
+Supplement to the Master Services Agreement
+Northwind Trading Co. ("Controller") and Acme Industrial Supply LLC ("Processor")
+
+1. SUBJECT MATTER
+This Addendum governs the Processor's handling of personal data on behalf of the
+Controller in connection with the Services.
+
+2. PROCESSING INSTRUCTIONS
+2.1 Processor shall process personal data only on documented instructions from the
+    Controller.
+2.2 Processor shall ensure persons authorized to process the data are bound by
+    confidentiality.
+
+3. DATA RETENTION AND DELETION
+3.1 Upon termination of the Services, Processor shall delete or return all personal
+    data within ninety (90) days, unless retention is required by applicable law.
+3.2 Processor shall certify deletion in writing upon request.
+
+4. SECURITY MEASURES
+Processor shall implement appropriate technical and organizational measures, including
+encryption at rest and in transit, access controls, and audit logging.
+
+5. SUB-PROCESSORS
+Processor shall not engage sub-processors without the Controller's prior written
+authorization.
+
+6. DATA SUBJECT REQUESTS
+Processor shall assist the Controller in responding to data subject requests within
+the timelines required by applicable data protection law.
+
+7. BREACH NOTIFICATION
+Processor shall notify the Controller without undue delay, and in any event within
+seventy-two (72) hours, after becoming aware of a personal data breach.

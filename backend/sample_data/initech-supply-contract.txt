@@ -1,0 +1,35 @@
+SUPPLY CONTRACT
+Between Northwind Trading Co. ("Buyer") and Initech Manufacturing Ltd. ("Seller")
+Effective Date: 22 February 2025
+
+1. SUPPLY OBLIGATIONS
+Seller agrees to manufacture and deliver precision parts in accordance with Buyer's
+purchase orders.
+
+2. PRICE AND PAYMENT
+2.1 Prices are fixed for the first contract year.
+2.2 Buyer shall pay each invoice within sixty (60) days of receipt (Net 60).
+2.3 Early payment within ten (10) days earns a 2% discount.
+
+3. TERM AND EXIT
+3.1 This Contract runs for three (3) years from the Effective Date.
+3.2 Either party may terminate for convenience with ninety (90) days' advance written
+    notice.
+3.3 Either party may terminate for insolvency of the other party immediately.
+
+4. WARRANTY PERIOD
+4.1 Seller warrants all parts against defects in material and workmanship for
+    twenty-four (24) months following delivery.
+4.2 Warranty claims must be submitted in writing with supporting documentation.
+
+5. LIABILITY
+5.1 Except for liability arising from intellectual property infringement, which is
+    unlimited, each party's liability is capped at the value of the affected order.
+5.2 Consequential damages are excluded.
+
+6. CONFIDENTIALITY
+The confidentiality obligations of this Contract survive for three (3) years after
+termination.
+
+7. GOVERNING LAW
+This Contract is governed by the laws of England and Wales.

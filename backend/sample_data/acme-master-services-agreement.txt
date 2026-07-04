@@ -1,0 +1,37 @@
+MASTER SERVICES AGREEMENT
+Between Northwind Trading Co. ("Client") and Acme Industrial Supply LLC ("Vendor")
+Effective Date: 14 January 2025
+
+1. SCOPE OF SERVICES
+Vendor shall provide industrial components and related fulfillment services as
+described in each Statement of Work executed under this Agreement.
+
+2. PAYMENT TERMS
+2.1 Vendor shall invoice Client monthly for services rendered.
+2.2 All undisputed invoices are due and payable within thirty (30) days of the
+    invoice date (Net 30).
+2.3 Late payments accrue interest at 1.0% per month.
+
+3. TERM AND TERMINATION
+3.1 This Agreement commences on the Effective Date and continues for two (2) years.
+3.2 Either party may terminate this Agreement for convenience upon thirty (30) days
+    prior written notice to the other party.
+3.3 Either party may terminate immediately for material breach not cured within
+    fifteen (15) days of written notice.
+
+4. WARRANTY
+4.1 Vendor warrants that all delivered goods will be free from defects in materials
+    and workmanship for a period of twelve (12) months from the date of delivery.
+4.2 Client's exclusive remedy for breach of warranty is repair or replacement.
+
+5. LIMITATION OF LIABILITY
+5.1 Each party's total aggregate liability under this Agreement shall not exceed the
+    total fees paid by Client to Vendor in the twelve (12) months preceding the claim.
+5.2 Neither party is liable for indirect, incidental, or consequential damages.
+
+6. CONFIDENTIALITY
+Each party shall protect the other's confidential information using no less than a
+reasonable standard of care for a period of three (3) years following disclosure.
+
+7. GOVERNING LAW
+This Agreement is governed by the laws of the State of Delaware.

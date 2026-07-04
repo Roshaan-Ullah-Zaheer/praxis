@@ -1,0 +1,134 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Palette as RGB channel triplets so Tailwind's <alpha-value> works and the whole
+   UI flips by toggling the `light` class on <html>. */
+:root {
+  --canvas: 10 14 19;
+  --surface: 16 23 31;
+  --surface-raised: 22 31 41;
+  --surface-hover: 28 39 51;
+  --ink: 230 237 243;
+  --ink-muted: 159 176 192;
+  --ink-faint: 100 116 136;
+  --trust: 16 185 129;
+  --trust-bright: 52 211 153;
+  --trust-dim: 14 58 48;
+  --conflict: 245 158 11;
+  --conflict-red: 242 84 91;
+  --conflict-dim: 58 42 14;
+  --info: 56 189 248;
+  color-scheme: dark;
+}
+
+html.light {
+  --canvas: 244 247 250;
+  --surface: 255 255 255;
+  --surface-raised: 248 250 252;
+  --surface-hover: 237 242 247;
+  --ink: 15 27 42;
+  --ink-muted: 71 85 105;
+  --ink-faint: 120 134 150;
+  --trust: 5 150 105;
+  --trust-bright: 4 120 87;
+  --trust-dim: 209 250 229;
+  --conflict: 180 83 9;
+  --conflict-red: 220 38 38;
+  --conflict-dim: 254 243 199;
+  --info: 2 132 199;
+  color-scheme: light;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background: rgb(var(--canvas));
+  color: rgb(var(--ink));
+}
+
+html:not(.light) body {
+  background:
+    radial-gradient(1100px 700px at 82% -12%, rgba(16, 185, 129, 0.07), transparent 55%),
+    radial-gradient(900px 600px at 8% 110%, rgba(56, 189, 248, 0.05), transparent 55%),
+    #0a0e13;
+}
+
+html.light body {
+  background:
+    radial-gradient(1100px 700px at 82% -12%, rgba(16, 185, 129, 0.08), transparent 55%),
+    radial-gradient(900px 600px at 8% 110%, rgba(56, 189, 248, 0.06), transparent 55%),
+    #f4f7fa;
+}
+
+::selection {
+  background: rgba(16, 185, 129, 0.3);
+}
+
+/* Thin, premium scrollbars */
+::-webkit-scrollbar {
+  width: 9px;
+  height: 9px;
+}
+::-webkit-scrollbar-thumb {
+  background: rgb(var(--ink-faint) / 0.25);
+  border-radius: 999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(var(--ink-faint) / 0.4);
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+@layer components {
+  .glass {
+    background: rgb(var(--surface) / 0.72);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    border: 1px solid rgb(var(--ink) / 0.08);
+  }
+  .hairline {
+    border-color: rgb(var(--ink) / 0.08);
+  }
+  .chip {
+    @apply inline-flex items-center gap-1 rounded-full px-2 py-0.5 text-[11px] font-medium;
+    border: 1px solid rgb(var(--ink) / 0.12);
+  }
+}
+
+/* Answer markdown-lite */
+.answer-body p {
+  margin: 0.35rem 0;
+}
+.answer-body strong {
+  color: rgb(var(--ink));
+  font-weight: 600;
+}
+.answer-body ul {
+  margin: 0.35rem 0;
+  padding-left: 1.1rem;
+  list-style: disc;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -400px 0;
+  }
+  100% {
+    background-position: 400px 0;
+  }
+}
+.shimmer {
+  background: linear-gradient(
+    90deg,
+    rgb(var(--ink-faint) / 0.06) 25%,
+    rgb(var(--ink-faint) / 0.14) 37%,
+    rgb(var(--ink-faint) / 0.06) 63%
+  );
+  background-size: 800px 100%;
+  animation: shimmer 1.4s infinite linear;
+}

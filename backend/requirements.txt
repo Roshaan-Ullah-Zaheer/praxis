@@ -1,0 +1,40 @@
+# --- Core API ---
+fastapi==0.115.6
+uvicorn[standard]==0.34.0
+sse-starlette==2.1.3
+python-multipart==0.0.18
+pydantic==2.10.4
+python-dotenv==1.0.1
+httpx==0.28.1
+
+# --- LLM harness ---
+langchain==0.3.14
+langchain-core==0.3.29
+langchain-google-genai==2.0.8
+langchain-groq==0.2.3
+langgraph==0.2.62
+
+# --- Ingestion / multimodal ---
+pymupdf==1.25.1
+pdfplumber==0.11.4
+python-docx==1.1.2
+pytesseract==0.3.13
+pillow==11.0.0
+
+# --- Vectors / math (local store) ---
+numpy==2.2.1
+
+# --- Production data layer (optional; used when STORE_BACKEND=supabase) ---
+# supabase==2.11.0
+# psycopg[binary]==3.2.3
+# pgvector==0.3.6
+
+# --- Reranking (optional upgrade over RRF baseline) ---
+# sentence-transformers==3.3.1
+
+# --- Auth + payments (M8) ---
+PyJWT==2.10.1
+stripe==11.4.0
+
+# --- Web augmentation (M10) ---
+# Uses Tavily's REST API via the stdlib HTTP client — no extra dependency needed.

@@ -1,0 +1,37 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.egg-info/
+.pytest_cache/
+
+# Node / Next.js
+node_modules/
+.next/
+out/
+.vercel/
+
+# Env & secrets
+.env
+.env.*
+!.env.example
+!.env.local.example
+
+# Runtime data (local store: SQLite DB + uploaded originals)
+backend/data/
+
+# Agent / editor tooling — never publish
+.claude/
+CLAUDE.md
+CLAUDE.local.md
+
+# Editor / OS
+.DS_Store
+.idea/
+.vscode/
+*.log
+
+# Build artifacts
+dist/
+build/

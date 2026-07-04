@@ -1,0 +1,19 @@
+name: keep-warm
+
+# Pings the backend health endpoint on a schedule so the free Hugging Face Space
+# does not sleep between demo visits. Update PRAXIS_HEALTH_URL after deploy.
+on:
+  schedule:
+    - cron: "*/20 * * * *" # every 20 minutes
+  workflow_dispatch: {}
+
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Ping health endpoint
+        env:
+          PRAXIS_HEALTH_URL: https://roshaanullahzaheer-praxis.hf.space/health
+        run: |
+          echo "Pinging $PRAXIS_HEALTH_URL"
+          curl -fsS --max-time 60 "$PRAXIS_HEALTH_URL" || echo "ping failed (space may be cold starting)"

@@ -19,8 +19,13 @@ from . import config
 logger = logging.getLogger(__name__)
 
 
-def _chat_candidates(temperature: float, max_tokens: int) -> list:
-    """Ordered fallback chain: every Gemini key x model, then Groq."""
+def _chat_candidates(temperature: float) -> list:
+    """Ordered fallback chain: every Gemini key x model, then Groq.
+
+    Each provider is capped at its own maximum output size so responses are never
+    truncated — Gemini's thinking tokens fit within its 64K ceiling, and Groq
+    stays within its (lower) limit.
+    """
     candidates: list = []
     for key in config.GOOGLE_API_KEYS:
         for model in (config.GEMINI_CHAT_MODEL, config.GEMINI_CHAT_FALLBACK):
@@ -29,7 +34,7 @@ def _chat_candidates(temperature: float, max_tokens: int) -> list:
                     model=model,
                     google_api_key=key,
                     temperature=temperature,
-                    max_output_tokens=max_tokens,
+                    max_output_tokens=config.GEMINI_MAX_OUTPUT_TOKENS,
                 )
             )
     if config.GROQ_API_KEY:
@@ -38,7 +43,7 @@ def _chat_candidates(temperature: float, max_tokens: int) -> list:
                 model=config.GROQ_CHAT_MODEL,
                 api_key=config.GROQ_API_KEY,
                 temperature=temperature,
-                max_tokens=max_tokens,
+                max_tokens=config.GROQ_MAX_OUTPUT_TOKENS,
             )
         )
     if not candidates:
@@ -46,19 +51,21 @@ def _chat_candidates(temperature: float, max_tokens: int) -> list:
     return candidates
 
 
-def get_chat(temperature: float = 0.2, max_tokens: int = 2048):
+# ``max_tokens`` is accepted for backwards compatibility but intentionally ignored:
+# each provider is always given its full output budget so nothing is ever cut off.
+def get_chat(temperature: float = 0.2, max_tokens: int | None = None):
     """A chat model that fails over across all Gemini keys, then Groq."""
-    primary, *rest = _chat_candidates(temperature, max_tokens)
+    primary, *rest = _chat_candidates(temperature)
     return primary.with_fallbacks(rest) if rest else primary
 
 
-def get_structured(schema, temperature: float = 0.0, max_tokens: int = 2048):
+def get_structured(schema, temperature: float = 0.0, max_tokens: int | None = None):
     """A chat model returning a structured (Pydantic) ``schema``, with failover.
 
     ``with_structured_output`` is applied per-candidate so the fallback chain
     still yields a parsed object.
     """
-    wrapped = [c.with_structured_output(schema) for c in _chat_candidates(temperature, max_tokens)]
+    wrapped = [c.with_structured_output(schema) for c in _chat_candidates(temperature)]
     primary, *rest = wrapped
     return primary.with_fallbacks(rest) if rest else primary
 

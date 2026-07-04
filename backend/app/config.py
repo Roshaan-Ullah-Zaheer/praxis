@@ -28,6 +28,13 @@ GEMINI_CHAT_MODEL: str = os.getenv("GEMINI_CHAT_MODEL", "gemini-2.5-flash")
 GEMINI_CHAT_FALLBACK: str = os.getenv("GEMINI_CHAT_FALLBACK", "gemini-2.5-flash-lite")
 GROQ_CHAT_MODEL: str = os.getenv("GROQ_CHAT_MODEL", "llama-3.3-70b-versatile")
 
+# Output token caps. gemini-2.5-flash is a THINKING model — it spends output
+# tokens reasoning before the visible answer, so a small cap truncates real
+# output. We set Gemini to its model maximum so nothing ever gets cut off. Groq
+# (llama, no thinking overhead) has a lower ceiling and needs far less.
+GEMINI_MAX_OUTPUT_TOKENS: int = int(os.getenv("GEMINI_MAX_OUTPUT_TOKENS", "65536"))
+GROQ_MAX_OUTPUT_TOKENS: int = int(os.getenv("GROQ_MAX_OUTPUT_TOKENS", "8192"))
+
 EMBED_MODEL: str = os.getenv("EMBED_MODEL", "models/gemini-embedding-001")
 EMBED_DIM: int = int(os.getenv("EMBED_DIM", "768"))
 
